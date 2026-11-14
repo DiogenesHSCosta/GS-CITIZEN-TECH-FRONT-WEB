@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pé na quadra</title>
+    <link rel="stylesheet" href="src/css/reset.css">
     <link rel="stylesheet" href="src/css/style.css">
     <link rel="icon" type="image/png" href="src/img/peNaQuadraLogo.png">
 </head>
@@ -12,7 +13,7 @@
         <figure>
             <img src="src/img/peNaQuadraLogo.png" alt="logo-pé-na-quadra">
         </figure>
-        <span>PÉ NA QUADRA</span>
+        <p>PÉ NA QUADRA</p>
         <ul>
             <li>INICIO</li>
             <li>QUADRAS</li>
@@ -46,14 +47,21 @@
                 </div>
             </div>
         </section> 
-        <section class="quadras">
+        <section class="quadras-selecao">
             <h2>Quadras</h2>
-            <select name="subtipos-quadras" id="quadras">
-                <option value="todos">Todos</option>
-                <option value="futsal">Futsal</option>
-                <option value="basquete">Basquete</option>
-                <option value="volei">Volei</option>
-            </select>
+            <div name="subtipos-quadras" id="quadras">
+                <input type="radio" name="modalidades" id="todas">
+                <label for="todas" class="botao-modalidae">TODAS</label>
+
+                <input type="radio" name="modalidades" id="futsal">
+                <label for="futsal" class="botao-modalidae">FUTSAL</label>
+
+                <input type="radio" name="modalidades" id="basquete">
+                <label for="basquete" class="botao-modalidae">BASQUETE</label>
+
+                <input type="radio" name="modalidades" id="volei">
+                <label for="volei" class="botao-modalidae">VOLEI</label>
+            </div>
             <div class="agrupamento-lateral">
                 <div class="quadras">
                     <figure><img src="" alt="" srcset=""></figure>
