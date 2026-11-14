@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
 :root{
     --cor-principal:#090a09;
     --cor-contraste:#10120f;
@@ -6,3 +7,30 @@
     --cor-font-clara:#f5f5eb;
     --cor-font-escura:#acaea3;
 }
+*{
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+
+/* INICIO HEADER */
+header{
+    background-color: var(--cor-principal);
+    color: var(--cor-font-clara);
+    display: flex;
+    align-items: center;
+    gap: 10px
+}
+header img{
+    padding: 20px;
+    width: 70px;
+    height: 70px;
+}
+header p{
+    /* font-size:  ; */
+}
+header ul{
+    display: flex;
+}
+/* FIM HEADER */
