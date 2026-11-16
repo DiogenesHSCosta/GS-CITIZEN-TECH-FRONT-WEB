@@ -54,16 +54,39 @@ header ul{
     margin-left: auto;
     padding-right: 30px;
 }
+
+header li{
+    position: relative;
+    padding: 3px;
+    cursor: pointer;
+}
+header li::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 2px;
+    
+    background-color: var(--cor-font-clara);
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 1s ease;
+}
+
+header li:hover::after {
+    transform: scaleX(1);
+}
 /* FIM HEADER */
 
 /* inicio PRIMEIRA SESSÃO */
 
-.inicio{
+#inicio{
     color: var(--cor-font-escura);
     background-color: var(--cor-principal);
     display: grid;
     grid-template-columns: 53fr 47fr;
-    height: 100vh;
+    height: 90vh;
 }
 
 .inicio-texto{
@@ -101,10 +124,15 @@ header ul{
 
     border-radius: 8px;
     background-color: var(--cor-contraste);
-    color:var(--cor-font-clara)
+    color:var(--cor-font-clara);
+    
+    transition: transform 0.3s ease;
+}
+.botao:hover {
+  transform: translateY(-4px);
 }
 
-.agrupador-botoes .botao:nth-child(1){
+.agrupador-botoes a:nth-child(1) .botao{
     background-color:var(--cor-secundaria);
     color: var(--cor-principal);
 }
@@ -140,6 +168,6 @@ header ul{
 }
 
 /* fim PRIMEIRA SESSÃO */
-.quadras-selecao{
+#quadras{
     background-color: var(--cor-contraste);
 }
