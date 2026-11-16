@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 :root{
     --cor-principal:#090a09;
     --cor-contraste:#10120f;
@@ -8,16 +8,29 @@
     --cor-font-escura:#acaea3;
 }
 body{
-  font-family: "Anton", sans-serif;
-  font-weight: 400;
-  letter-spacing: 2px; 
-  font-style: normal;
+    background-color: var(--cor-principal);
+    color: var(--cor-font-escura);
+    max-width: 100%;
+}
+body h1, h2, h3{
+    font-family: "Anton", sans-serif;
+    font-weight: 500;
+    letter-spacing: 2px; 
+    font-style: normal;
+    font-size: 18px;
+}
+body p, li, label{
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
 }
 
 
 /* INICIO HEADER */
 header{
-    position: fixed;
+    position: sticky;
+    top: 0; 
     width: 100%;
     background-color: var(--cor-principal);
     color: var(--cor-font-clara);
@@ -26,9 +39,10 @@ header{
     gap: 10px
 }
 header img{
+    transform: rotate(-15deg);
     padding: 20px;
-    width: 40px;
-    height: 40px;
+    width: 48px;
+    height: 31px;
 }
 header p{
     font-size: 24px;
@@ -41,3 +55,91 @@ header ul{
     padding-right: 30px;
 }
 /* FIM HEADER */
+
+/* inicio PRIMEIRA SESSÃO */
+
+.inicio{
+    color: var(--cor-font-escura);
+    background-color: var(--cor-principal);
+    display: grid;
+    grid-template-columns: 53fr 47fr;
+    height: 100vh;
+}
+
+.inicio-texto{
+    padding: 40px;
+}
+.inicio-texto h1{
+    font-size: 83px;
+    font-weight: 500;
+    width: 70%;
+    padding-bottom: 20px;
+    color: var(--cor-font-clara);
+}
+.inicio-texto h1 span{
+    color: var(--cor-secundaria);
+}
+.inicio-texto p{
+    width: 70%;
+}
+.agrupador-botoes{
+    padding:20px 0px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.botao{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: left;
+
+    height: 40px;
+    width: 216px;
+    padding: 10px 22px 10px 3px;
+    padding-left: 3px;
+
+    border-radius: 8px;
+    background-color: var(--cor-contraste);
+    color:var(--cor-font-clara)
+}
+
+.agrupador-botoes .botao:nth-child(1){
+    background-color:var(--cor-secundaria);
+    color: var(--cor-principal);
+}
+
+.inicio-logo{
+    padding: 10px;
+}
+.inicio-logo img{
+    width: 73%;
+    padding-bottom: 20px;
+}
+.inicio-logo h2{
+    font-size: 42px;
+}
+.inicio-logo .botao{
+    flex-direction: column;
+    align-items: flex-start;
+    
+    gap: 20px;   
+    padding: 20px 24px;
+    width: 410px;
+    height: 151px;
+}
+
+.inicio-logo .botao p:nth-child(1){
+    font-size: 11px;
+    color: var(--cor-secundaria);
+}
+
+.inicio-logo .botao p:nth-child(3){
+    font-size: 13px;
+    color: var(--cor-font-escura);
+}
+
+/* fim PRIMEIRA SESSÃO */
+.quadras-selecao{
+    background-color: var(--cor-contraste);
+}
