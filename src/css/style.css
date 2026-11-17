@@ -18,6 +18,7 @@ body h1, h2, h3{
     letter-spacing: 2px; 
     font-style: normal;
     font-size: 18px;
+    color: var(--cor-font-clara);
 }
 body p, li, label{
     font-family: "Inter", sans-serif;
@@ -26,7 +27,9 @@ body p, li, label{
     font-style: normal;
 }
 
-
+section{
+    padding: 10px;
+}
 /* INICIO HEADER */
 header{
     position: sticky;
@@ -176,10 +179,14 @@ header li:hover::after {
     background-color: var(--cor-contraste);
     padding: 10px;
 }
-
+#quadras-sessao h2{
+    font-size: 54px;
+    padding: 30px 0px;
+}
 .carrossel{
     width: 100%;
     overflow: hidden;
+    padding: 20px;
 }
 .agrupamento-lateral{
     display: flex;
@@ -189,6 +196,7 @@ header li:hover::after {
 
 .quadras {
     width: 320px; 
+    height: 350px;
     flex-shrink: 0;
     overflow: hidden;
     background-color:var(--cor-cards);
@@ -199,6 +207,40 @@ header li:hover::after {
     margin: 0;
     height: 170px;
     background-color: #1e241e;
+}
+
+.quadras figure img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.quadra-info {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+.quadra-info p:nth-child(1){
+    color: var(--cor-secundaria);
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+.quadra-info h3{
+    font-size: 25px;
+}
+
+.quadra-info p:nth-child(3){
+    color: var(--cor-font-escura);
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+.quadra-info p:nth-child(4){
+    color: #BFDD95;
+    font-size: 12px;
 }
 
 
