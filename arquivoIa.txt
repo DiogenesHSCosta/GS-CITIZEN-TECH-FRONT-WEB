@@ -1,3 +1,5 @@
 Como suavizar o scroll do link ancora?
 como evitar que div se espremam para caberem no tamanho maximo lateral e possam ocupar um espaço "invisivel"
-como pausar uma animação com hover utilizando apenas css
+como pausar uma animação com hover utilizando apenas css?
+como selecionar um input especifico via query selector?
+como remover e adicionar atributos css pelo js
