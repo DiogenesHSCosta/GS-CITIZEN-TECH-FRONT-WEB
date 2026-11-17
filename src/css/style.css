@@ -168,6 +168,38 @@ header li:hover::after {
 }
 
 /* fim PRIMEIRA SESSÃO */
-#quadras{
+
+
+
+/* inicio sessão quadras */
+#quadras-sessao{
     background-color: var(--cor-contraste);
+    padding: 10px;
 }
+
+.carrossel{
+    width: 100%;
+    overflow: hidden;
+}
+.agrupamento-lateral{
+    display: flex;
+    gap: 24px;
+    width: max-content; 
+}
+
+.quadras {
+    width: 320px; 
+    flex-shrink: 0;
+    overflow: hidden;
+    background-color:var(--cor-cards);
+    border-radius: 12px;
+}
+
+.quadras figure {
+    margin: 0;
+    height: 170px;
+    background-color: #1e241e;
+}
+
+
+/* fim sessão quadras */
