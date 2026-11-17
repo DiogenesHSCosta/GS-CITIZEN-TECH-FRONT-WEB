@@ -208,7 +208,7 @@ header li:hover::after {
 }
 
 .animar{
-    animation: deslizar 10s linear infinite;
+    animation: deslizar 20s linear infinite;
 }
 
 .animar:hover{
