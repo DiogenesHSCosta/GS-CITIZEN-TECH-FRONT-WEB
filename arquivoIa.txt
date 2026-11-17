@@ -1,2 +1,3 @@
 Como suavizar o scroll do link ancora?
 como evitar que div se espremam para caberem no tamanho maximo lateral e possam ocupar um espaço "invisivel"
+como pausar uma animação com hover utilizando apenas css
