@@ -13,15 +13,17 @@ checkbox.forEach(radio => {
         else{
             container.classList.remove('animar');
             container.style.width = '100%';
-        }
-        quadras.forEach(card =>{
+
+            quadras.forEach(card =>{
             const falso =  card.classList.contains('copia');
             const modalidade = card.dataset.modalidade;
             if (!falso && modalidade === filtro) {
                     card.style.display = '';
-                } else {
-                    card.style.display = 'none';
-                }
+            }
+            else {
+                card.style.display = 'none';
+            }
         })
+        }
     })
 });
