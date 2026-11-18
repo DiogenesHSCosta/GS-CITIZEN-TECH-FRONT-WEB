@@ -198,7 +198,7 @@ header li:hover::after {
 }
 
 
-.agrupamento-lateral{
+.carrossel .agrupamento-carrosel{
     display: flex;
     gap: 24px;
     width: max-content; 
@@ -272,13 +272,16 @@ header li:hover::after {
 }
 /* fim sessão quadras */
 
+
 /* sessão problema */
-#problema .agrupamento-lateral{
+.agrupamento-lateral{
+    display: flex;
+    gap: 24px;
+    width: max-content; 
     width: 95%;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 40px;
-    
 }
 
 .texto-explicativo{
@@ -293,11 +296,23 @@ header li:hover::after {
     width: 30%;
 }
 
-.problematica{
+.informativa{
+    padding: 2%;
+    height: 500px;
+}
+
+/* fim sessão problema */
+/* inicio sessão tecnologia */
+#tecnologia{
+    background-color: var(--cor-contraste);
+}
+.cards{
     width: 90%;
     margin: 0px 10px;
     background-color: var(--cor-cards);
     border-radius: 12px;;
     padding: 30px;
+    margin-top: 30px;
 }
-/* fim sessão problema */
+
+/* fim sessão tecnologia */
