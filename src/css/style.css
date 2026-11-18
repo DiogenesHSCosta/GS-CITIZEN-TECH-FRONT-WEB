@@ -276,7 +276,6 @@ header li:hover::after {
 /* sessão problema */
 .agrupamento-lateral{
     display: flex;
-    gap: 24px;
     width: max-content; 
     width: 95%;
     display: grid;
@@ -288,17 +287,28 @@ header li:hover::after {
     padding: 10px 0px;
 }
 .titulos-objetivos{
+    font-family: "Anton", sans-serif;
+    font-weight: 500;
     color: var(--cor-secundaria);
     padding: 10px 0px;
 }
 
-#problema h2{
+.impacto-titulo{
     width: 30%;
 }
 
 .informativa{
     padding: 2%;
     height: 500px;
+}
+#problema .agrupamento-lateral{
+    gap: 60px;
+}
+#problema .cards{
+    background-color: var(--cor-principal);
+    border-top: 2px solid var(--cor-font-escura);
+    border-radius: 0px;
+    padding: 0px;
 }
 
 /* fim sessão problema */
@@ -316,3 +326,34 @@ header li:hover::after {
 }
 
 /* fim sessão tecnologia */
+
+/* inicio sessão publico alvo */
+
+#publico-alvo{
+    background-color: var(--cor-contraste);
+}
+#publico-alvo .impacto-titulo{
+    width: 40%;
+}
+/* fim sessão publico alvo */
+
+
+/* inicio sessão beneficios */
+#beneficios{
+    background-color: var(--cor-secundaria);
+}
+
+#beneficios :is(h2, h3, .titulos-objetivos, p){
+    color: var(--cor-principal);
+}
+#beneficios .cards{
+    background-color: var(--cor-secundaria);
+}
+#beneficios h2{
+    padding: 0px;
+}
+.titulos{
+    padding: 20px 0;
+}
+/* fim sessão beneficios */
+
