@@ -4,3 +4,4 @@ como pausar uma animação com hover utilizando apenas css?
 como selecionar um input especifico via query selector?
 como remover e adicionar atributos css pelo js
 como saber quais classes um atributo tem
+existe objetos que estão ultrapassando meu header com position stick, pq?
