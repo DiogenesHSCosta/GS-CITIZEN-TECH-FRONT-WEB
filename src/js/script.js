@@ -1,5 +1,5 @@
 const checkbox = document.querySelectorAll('#quadras input[type="radio"]');
-const container = document.querySelector('.agrupamento-lateral');
+const container = document.querySelector('.agrupamento-carrosel');
 const quadras = document.querySelectorAll('.quadras');
 
 checkbox.forEach(radio => {
