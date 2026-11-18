@@ -102,8 +102,9 @@ header li:hover::after {
     padding: 40px;
 }
 .inicio-texto h1{
-    font-size: 12px;
+    font-size: 80px;
     font-weight: 500;
+    line-height: 1;
     width: 70%;
     padding-bottom: 20px;
     color: var(--cor-font-clara);
