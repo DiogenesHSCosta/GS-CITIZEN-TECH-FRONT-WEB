@@ -57,21 +57,21 @@
         <section id="quadras-sessao">
             <h2>QUADRAS</h2>
             <div name="subtipos-quadras" id="quadras">
-                <input type="radio" name="modalidades" id="todas">
+                <input type="radio" name="modalidade" id="todas" checked>
                 <label for="todas" class="botao-modalidae">TODAS</label>
 
-                <input type="radio" name="modalidades" id="futsal">
+                <input type="radio" name="modalidade" id="futsal">
                 <label for="futsal" class="botao-modalidae">FUTSAL</label>
 
-                <input type="radio" name="modalidades" id="basquete">
+                <input type="radio" name="modalidade" id="basquete">
                 <label for="basquete" class="botao-modalidae">BASQUETE</label>
 
-                <input type="radio" name="modalidades" id="volei">
+                <input type="radio" name="modalidade" id="volei">
                 <label for="volei" class="botao-modalidae">VOLEI</label>
             </div>
-            <div class="carrossel">
+            <div class="carrossel" data-modalidade="futsal">
                 <div class="agrupamento-lateral animar">
-                    <div class="quadras">
+                    <div class="quadras" data-modalidade="futsal">
                         <figure><img src="src/img/quadrafutsal1.jpg" alt="quadra futsal"></figure>
                         <div class="quadra-info">
                             <p>Futsal</p>
@@ -80,7 +80,7 @@
                             <p>Faltam 2 jogadores</p>
                         </div>
                     </div>
-                    <div class="quadras">
+                    <div class="quadras" data-modalidade="basquete">
                         <figure><img src="src/img/quadraBasquete.jpg" alt="quadra baquete" srcset=""></figure>
                         <div class="quadra-info">
                             <p>Basquete</p>
@@ -89,7 +89,7 @@
                             <p>Faltam 1 jogadores</p>
                         </div>
                     </div>
-                    <div class="quadras">
+                    <div class="quadras" data-modalidade="volei">
                         <figure><img src="src/img/quadraVolei.jpg" alt="quadra volei" srcset=""></figure>
                         <div class="quadra-info">
                             <p>Volei</p>
@@ -98,7 +98,7 @@
                             <p>Faltam 6 jogadores</p>
                         </div>
                     </div>
-                    <div class="quadras">
+                    <div class="quadras" data-modalidade="futsal">
                         <figure><img src="src/img/quadrafutsal2.jpg" alt="quadra futsal"></figure>
                         <div class="quadra-info">
                             <p>Futsal</p>
@@ -107,7 +107,7 @@
                             <p>Faltam x jogadores</p>
                         </div>
                     </div>
-                    <div class="quadras">
+                    <div class="quadras" data-modalidade="basquete">
                         <figure><img src="src/img/quadraBasquete2.jpg" alt="quadra futsal"></figure>
                         <div class="quadra-info">
                             <p>Basquete</p>
@@ -117,9 +117,7 @@
                         </div>
                     </div>
 
-
-
-                    <div class="quadras">
+                    <div class="quadras copia" data-modalidade="futsal">
                         <figure><img src="src/img/quadrafutsal1.jpg" alt="quadra futsal"></figure>
                         <div class="quadra-info">
                             <p>Futsal</p>
@@ -128,7 +126,7 @@
                             <p>Faltam 2 jogadores</p>
                         </div>
                     </div>
-                    <div class="quadras">
+                    <div class="quadras copia" data-modalidade="basquete">
                         <figure><img src="src/img/quadraBasquete.jpg" alt="quadra baquete" srcset=""></figure>
                         <div class="quadra-info">
                             <p>Basquete</p>
@@ -137,7 +135,7 @@
                             <p>Faltam 1 jogadores</p>
                         </div>
                     </div>
-                    <div class="quadras">
+                    <div class="quadras copia" data-modalidade="volei">
                         <figure><img src="src/img/quadraVolei.jpg" alt="quadra volei" srcset=""></figure>
                         <div class="quadra-info">
                             <p>Volei</p>
@@ -146,7 +144,7 @@
                             <p>Faltam 6 jogadores</p>
                         </div>
                     </div>
-                    <div class="quadras">
+                    <div class="quadras copia" data-modalidade="futsal">
                         <figure><img src="src/img/quadrafutsal2.jpg" alt="quadra futsal"></figure>
                         <div class="quadra-info">
                             <p>Futsal</p>
@@ -155,7 +153,7 @@
                             <p>Faltam x jogadores</p>
                         </div>
                     </div>
-                    <div class="quadras">
+                    <div class="quadras copia" data-modalidade="basquete">
                         <figure><img src="src/img/quadraBasquete2.jpg" alt="quadra futsal"></figure>
                         <div class="quadra-info">
                             <p>Basquete</p>
