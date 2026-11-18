@@ -17,8 +17,13 @@ body h1, h2, h3{
     font-weight: 500;
     letter-spacing: 2px; 
     font-style: normal;
-    font-size: 18px;
+    line-height: 1.2;
+    font-size: 52px;
     color: var(--cor-font-clara);
+    padding: 20px 0px;
+}
+h3{
+    font-size: 32px;
 }
 body p, li, label{
     font-family: "Inter", sans-serif;
@@ -34,6 +39,7 @@ section{
 header{
     position: sticky;
     top: 0; 
+    z-index: 1000;
     width: 100%;
     background-color: var(--cor-principal);
     color: var(--cor-font-clara);
@@ -96,7 +102,7 @@ header li:hover::after {
     padding: 40px;
 }
 .inicio-texto h1{
-    font-size: 83px;
+    font-size: 12px;
     font-weight: 500;
     width: 70%;
     padding-bottom: 20px;
@@ -180,7 +186,6 @@ header li:hover::after {
     padding: 10px;
 }
 #quadras-sessao h2{
-    font-size: 54px;
     padding: 30px 0px;
 }
 
@@ -188,7 +193,7 @@ header li:hover::after {
 .carrossel{
     width: 100%;
     overflow: hidden;
-    padding: 20px;
+    padding: 20px 0px;
 }
 
 
@@ -264,6 +269,34 @@ header li:hover::after {
     color: #BFDD95;
     font-size: 12px;
 }
-
-
 /* fim sessão quadras */
+
+/* sessão problema */
+#problema .agrupamento-lateral{
+    width: 95%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 40px;
+    
+}
+
+.texto-explicativo{
+    padding: 10px 0px;
+}
+.titulos-objetivos{
+    color: var(--cor-secundaria);
+    padding: 10px 0px;
+}
+
+#problema h2{
+    width: 30%;
+}
+
+.problematica{
+    width: 90%;
+    margin: 0px 10px;
+    background-color: var(--cor-cards);
+    border-radius: 12px;;
+    padding: 30px;
+}
+/* fim sessão problema */
