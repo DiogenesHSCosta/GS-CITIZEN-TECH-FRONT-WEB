@@ -70,5 +70,6 @@ Grupo do Pé na Quadra, FIAP, Engenharia de Software, 1º ano.
 - Bruno Sinhorelli (RM 574415)
 - Diógenes Costa (RM 559127)
 - Roberto F. S. Santos (RM 575266)
+
 Projeto acadêmico, desenvolvido para a Global Solution 2026.2 (CitizenTech).
  
