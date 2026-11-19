@@ -276,7 +276,6 @@ header li:hover::after {
 /* sessão problema */
 .agrupamento-lateral{
     display: flex;
-    gap: 24px;
     width: max-content; 
     width: 95%;
     display: grid;
@@ -288,17 +287,28 @@ header li:hover::after {
     padding: 10px 0px;
 }
 .titulos-objetivos{
+    font-family: "Anton", sans-serif;
+    font-weight: 500;
     color: var(--cor-secundaria);
     padding: 10px 0px;
 }
 
-#problema h2{
+.impacto-titulo{
     width: 30%;
 }
 
 .informativa{
     padding: 2%;
-    height: 500px;
+    height: 75vh;
+}
+#problema .agrupamento-lateral{
+    gap: 60px;
+}
+#problema .cards{
+    background-color: var(--cor-principal);
+    border-top: 2px solid var(--cor-font-escura);
+    border-radius: 0px;
+    padding: 0px;
 }
 
 /* fim sessão problema */
@@ -313,6 +323,91 @@ header li:hover::after {
     border-radius: 12px;;
     padding: 30px;
     margin-top: 30px;
+    transition: 1;
+    transition: transform 0.3s ease;
 }
 
 /* fim sessão tecnologia */
+
+/* inicio sessão publico alvo */
+
+#publico-alvo{
+    background-color: var(--cor-contraste);
+}
+#publico-alvo .impacto-titulo{
+    width: 40%;
+}
+/* fim sessão publico alvo */
+
+
+/* inicio sessão beneficios */
+#beneficios{
+    background-color: var(--cor-secundaria);
+}
+
+#beneficios :is(h2, h3, .titulos-objetivos, p){
+    color: var(--cor-principal);
+}
+#beneficios .cards{
+    background-color: var(--cor-secundaria);
+}
+#beneficios h2{
+    padding: 0px;
+}
+.titulos{
+    padding: 20px 0;
+}
+/* fim sessão beneficios */
+
+/* inicio sessão objetivo */
+
+#objetivo h2{
+    padding: 0px;
+}
+.agrupamento-objetivo {
+    margin-top: 40px;
+    width: 95%;
+}
+
+.agrupamento-objetivo-itens {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 60px 500px 1fr;
+    align-items: center;
+    border-bottom: 1px solid var(--cor-cards)
+}
+
+.cards:hover{
+  transform: translateY(-4px);
+}
+/* fim sessão objetivo */
+
+/* inicio FAQ */
+.agrupador-faq{
+    display: grid;
+    grid-template-columns: 50fr 50fr;
+}
+
+.perguntas{
+    width: 90%;
+    border-bottom: 1px solid var(--cor-font-escura);
+    padding: 10px 0px 15px 0px;
+}
+.perguntas h3{
+    font-size: 20px;
+}
+/* FIM FAQ */
+
+
+/* rodapé */
+
+footer{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 10vh;
+    align-items: center;
+    background-color: var(--cor-cards);
+    
+    font-family: "Anton", sans-serif;
+}
